@@ -1,0 +1,57 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(45deg, #ffe1c9, #fde4cf);
+}
+
+.swiper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+}
+.swiper .swipe-btn {
+  cursor: pointer;
+}
+.swiper .swipe-btn.back-to-start {
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0) !important;
+}
+.swiper .swipe-btn .circle {
+  fill: #FB91C9;
+}
+.swiper .swipe-btn .arrow {
+  stroke: #FB91C9;
+  stroke-width: 1px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  fill: #f4ece1;
+}
+.swiper .swipe-end {
+  fill-rule: evenodd;
+  stroke: #FB91C9;
+  stroke-width: 2px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  fill: none;
+}
+.swiper .dotted-line circle {
+  fill: #ad8bd6;
+}
+
+.unlock {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ad8bd6;
+  text-align: center;
+  padding: 10px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+.unlock.unlocked {
+  opacity: 1;
+}
